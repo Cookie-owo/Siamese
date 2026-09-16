@@ -1,0 +1,29 @@
+Test Results (Threshold=0.5000)
+==================================================
+Total samples: 4054
+Negative samples (Actual): 2027
+Positive samples (Actual): 2027
+
+Accuracy: 0.9842
+Precision (Positive): 0.9857
+Sensitivity / Recall (Positive): 0.9827
+Specificity: 0.9857
+F1-Score (Positive): 0.9842
+ROC-AUC: 0.9984
+Average Precision: 0.9986
+
+Confusion Matrix Details:
+True Negative: 1998
+False Positive: 29
+False Negative: 35
+True Positive: 1992
+
+Classification Report:
+              precision    recall  f1-score   support
+
+    Negative     0.9828    0.9857    0.9842      2027
+    Positive     0.9857    0.9827    0.9842      2027
+
+    accuracy                         0.9842      4054
+   macro avg     0.9842    0.9842    0.9842      4054
+weighted avg     0.9842    0.9842    0.9842      4054

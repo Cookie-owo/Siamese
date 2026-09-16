@@ -1,0 +1,23 @@
+# Runtime dependencies for the POCT image-classification workflow.
+# Frozen from the validated pytorch39 environment.
+# Python: 3.9.23
+# Platform: Linux x86_64
+# PyTorch CUDA runtime: 11.8
+# cuDNN: 9.1.0 (reported as 90100)
+# GPU used for validation: NVIDIA GeForce RTX 3090
+#
+# CUDA-specific environment information will also be recorded
+# in environment.yml and the repository README.
+
+torch==2.5.1
+torchvision==0.20.1
+numpy==1.23.5
+Pillow==11.3.0
+opencv-python==4.11.0.86
+matplotlib==3.9.4
+scikit-learn==1.6.1
+scipy==1.13.1
+tqdm==4.67.1
+pandas==2.3.2
+openpyxl==3.1.5
+seaborn==0.13.2

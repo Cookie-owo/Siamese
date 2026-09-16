@@ -1,0 +1,44 @@
+Training Configuration:
+Dataset Name: SimoLFA Dataset
+Model Type: AttentionResNet34 (attention at layer3 and layer4)
+Epochs: 100
+Batch Size: 32
+Learning Rate: 0.0001
+Positive Weight: 2.0
+Attention Threshold K: 3.0
+Random Seed: 42
+Deterministic Mode: True
+Data Augmentation: Enabled
+Augmentation Type: Online Random Augmentation
+Train Samples: 25168
+Validation Samples: 4194
+Best Val Acc: 0.9623
+
+This file records the training run used for the paper. Because online random augmentation is stochastic, epoch-level curves are a record of this run and are not expected to be reproduced exactly in a new run.
+
+=== Sample Predictions ===
+Sample 1:
+  True Label: Negative
+  Predicted Prob: 0.0484
+  Prediction: Negative
+
+Sample 2:
+  True Label: Negative
+  Predicted Prob: 0.0143
+  Prediction: Negative
+
+Sample 3:
+  True Label: Negative
+  Predicted Prob: 0.0686
+  Prediction: Negative
+
+Sample 4:
+  True Label: Negative
+  Predicted Prob: 0.0491
+  Prediction: Negative
+
+Sample 5:
+  True Label: Negative
+  Predicted Prob: 0.0142
+  Prediction: Negative
+

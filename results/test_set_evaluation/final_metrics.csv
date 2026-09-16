@@ -1,0 +1,10 @@
+metric,value
+accuracy,0.9842
+precision,0.9857
+sensitivity_recall,0.9827
+specificity,0.9857
+f1_score,0.9842
+roc_auc,0.9984
+average_precision,0.9986
+classification_threshold,0.5
+test_sample_count,4054

@@ -1,0 +1,11 @@
+# Python-generated files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Restricted or separately archived data and model artifacts
+data/
+model_artifacts/
+outputs/
+tmp/
+.pytest_cache/

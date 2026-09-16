@@ -1,0 +1,47 @@
+schema_version: 1
+
+project:
+  algorithm_name: Siamese
+  configuration_name: inference_legacy_record
+  role: historical_supplementary_inference_record
+
+pipeline:
+  input_level: original_image
+  grid_rows: 5
+  grid_columns: 5
+  patches_per_image: 25
+
+model:
+  implementation: models.attention_resnet34.AttentionResNet34
+  architecture: AttentionResNet34
+  attention_layers:
+    - layer3
+    - layer4
+
+checkpoint:
+  role: fixed_checkpoint_used_for_supplementary_analysis
+  sha256: bc37d1f338c0811d4220bfbceaf7b955c77f89d20b18902e82b2a1baec21599a
+  included_in_repository: true
+  release_path: model_artifacts/siamese_attention_resnet34_supplementary_checkpoint.pth
+
+preprocessing:
+  image_size: 224
+  rgb_resize_interpolation: bilinear
+  rgb_normalization: ImageNet
+  attention_threshold_K: 3.0
+  attention_threshold_method: global_mean_minus_K_times_standard_deviation
+  attention_binarization: cv2.THRESH_BINARY_INV
+  attention_resize_interpolation: nearest_neighbor
+
+inference:
+  patch_classification_threshold: 0.5
+  positive_patch_ratio_threshold: 0.088
+  positive_rule: p_patch_ratio_greater_than_threshold
+
+outputs:
+  - patch_predictions.csv
+  - source_image_predictions.csv
+  - folder_predictions.csv
+  - detection_report.txt
+  - run_config.json
+  - SHA256SUMS

@@ -1,0 +1,81 @@
+schema_version: 1
+
+project:
+  algorithm_name: Siamese
+  package_name: Siamese-release
+  configuration_name: supplementary_inference_v1
+  role: supplementary_model_inference
+  status: reproducibility_candidate
+
+data:
+  dataset_name: SimoLFA Dataset
+  dataset_version: POCTDataset_rescreened_v1
+  access: external_path_required
+  path_argument: --input-dir
+  input_level: original_image
+  note: >
+    Input images are not included in this code package. Clinical inputs may be
+    sensitive and must be processed only under approved access conditions.
+
+preprocessing:
+  grid:
+    rows: 5
+    columns: 5
+    patches_per_image: 25
+  image_size:
+    height: 224
+    width: 224
+  rgb:
+    channels: 3
+    interpolation: bilinear
+    normalization: imagenet
+    mean: [0.485, 0.456, 0.406]
+    standard_deviation: [0.229, 0.224, 0.225]
+  reference_map:
+    channels: 1
+    grayscale: true
+    threshold_formula: mean - K * standard_deviation
+    K: 3.0
+    binarization: cv2.THRESH_BINARY_INV
+    interpolation: nearest_neighbor
+    normalized_range: [0.0, 1.0]
+
+model:
+  algorithm_name: Siamese
+  architecture: AttentionResNet34
+  implementation: models.attention_resnet34.AttentionResNet34
+  backbone: ResNet-34
+  pretrained_backbone: false
+  attention_layers: [layer3, layer4]
+  output_logits: 1
+
+checkpoint:
+  role: supplementary_model
+  path: model_artifacts/siamese_attention_resnet34_supplementary_checkpoint.pth
+  sha256: bc37d1f338c0811d4220bfbceaf7b955c77f89d20b18902e82b2a1baec21599a
+  loading: strict
+
+inference:
+  patch_classification_threshold: 0.5
+  positive_patch_ratio_threshold: 0.088
+  positive_rule: p_patch_ratio_greater_than_threshold
+  batch_size: 32
+  workers: 0
+
+outputs:
+  required:
+    - patch_predictions.csv
+    - source_image_predictions.csv
+    - folder_predictions.csv
+    - detection_report.txt
+    - run_config.json
+    - SHA256SUMS
+  output_path_argument: --output-dir
+  overwrite_existing_output: false
+
+provenance:
+  record_command_line: true
+  record_config_copy: true
+  record_environment: true
+  record_input_manifest: true
+  record_checkpoint_hash: true
