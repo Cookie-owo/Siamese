@@ -2,9 +2,10 @@
 
 The SimoLFA Dataset contains 33,416 RGB image patches in fixed training (25,168), validation (4,194), and test (4,054) partitions. A release copy, including the fixed partitions, data dictionary, manifests, and checksums, is included in this package for repository preparation and peer-review access.
 
-The SimoLFA Dataset will be deposited as a public Zenodo record with a
-version-specific DOI. The final DOI, version, license, and reviewer-access
-link must be inserted after deposition. The published statement will provide
-the repository name, persistent identifier, data version, and reuse license.
+The SimoLFA Dataset is publicly available from Zenodo as version 1.0.0:
+[10.5281/zenodo.22793684](https://doi.org/10.5281/zenodo.22793684). The
+record contains the fixed partitions, metadata, manifests, and checksums.
 
-Patient-level clinical source data are not included. If those data cannot be openly shared, the final statement must identify the data custodian, application procedure, eligibility conditions, data-use agreement, and expected response time.
+Patient-level clinical source data are not included in the public dataset
+record. Access to those data remains subject to the responsible institution's
+ethics approval, data custodian, and applicable data-use requirements.

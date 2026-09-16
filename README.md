@@ -9,9 +9,9 @@ separate Zenodo records because they are too large for the code repository.
 The following persistent identifiers must be replaced with the final Zenodo
 DOIs before publication:
 
-- SimoLFA Dataset: **DOI pending Zenodo deposition**
-- Model checkpoint: **DOI pending Zenodo deposition**
-- Frozen code release: **DOI pending Zenodo-GitHub archive**
+- SimoLFA Dataset: [10.5281/zenodo.22793684](https://doi.org/10.5281/zenodo.22793684)
+- Model checkpoint: [10.5281/zenodo.22793607](https://doi.org/10.5281/zenodo.22793607)
+- Frozen code release: GitHub tag [`v1.0.0`](https://github.com/Cookie-owo/Siamese/releases/tag/v1.0.0); Zenodo software DOI pending
 
 Download the dataset and checkpoint from the corresponding Zenodo records,
 then place them under `data/SimoLFA_Dataset/` and

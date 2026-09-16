@@ -7,4 +7,9 @@ repository URL, immutable release tag, and Zenodo archive DOI must be inserted
 after the GitHub repository and Zenodo record have been created. The archived
 release must match the version used to generate the reported results.
 
-Current status: repository URL and DOI pending final deposition.
+The source code is available at [Cookie-owo/Siamese](https://github.com/Cookie-owo/Siamese),
+with the manuscript version identified by the [`v1.0.0`](https://github.com/Cookie-owo/Siamese/releases/tag/v1.0.0)
+tag. The associated model checkpoint is archived at
+[10.5281/zenodo.22793607](https://doi.org/10.5281/zenodo.22793607).
+The Zenodo DOI for the frozen source-code archive will be added if a separate
+software archive is created.

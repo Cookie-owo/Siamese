@@ -7,12 +7,12 @@
 | Algorithm name | Siamese |
 | Package title | Siamese reproducible image analysis |
 | Software version | 1.0.0 |
-| Code repository | To be completed |
-| Code DOI | To be completed |
-| Model repository | To be completed |
-| Model DOI | To be completed |
-| Dataset repository | To be completed |
-| Dataset DOI | To be completed |
+| Code repository | https://github.com/Cookie-owo/Siamese |
+| Code DOI | GitHub tag v1.0.0; Zenodo software DOI pending |
+| Model repository | https://doi.org/10.5281/zenodo.22793607 |
+| Model DOI | 10.5281/zenodo.22793607 |
+| Dataset repository | https://doi.org/10.5281/zenodo.22793684 |
+| Dataset DOI | 10.5281/zenodo.22793684 |
 | Software licence | BSD-3-Clause |
 | Authors | To be completed |
 | Corresponding author | To be completed |
