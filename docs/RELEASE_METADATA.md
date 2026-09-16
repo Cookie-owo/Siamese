@@ -9,10 +9,10 @@
 | Software version | 1.0.0 |
 | Code repository | https://github.com/Cookie-owo/Siamese |
 | Code DOI | GitHub tag v1.0.0; Zenodo software DOI pending |
-| Model repository | https://doi.org/10.5281/zenodo.22793607 |
-| Model DOI | 10.5281/zenodo.22793607 |
-| Dataset repository | https://doi.org/10.5281/zenodo.22793684 |
-| Dataset DOI | 10.5281/zenodo.22793684 |
+| Model repository | https://doi.org/10.5281/zenodo.22793684 |
+| Model DOI | 10.5281/zenodo.22793684 |
+| Dataset repository | https://doi.org/10.5281/zenodo.22793607 |
+| Dataset DOI | 10.5281/zenodo.22793607 |
 | Software licence | BSD-3-Clause |
 | Authors | To be completed |
 | Corresponding author | To be completed |

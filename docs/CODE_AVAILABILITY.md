@@ -10,6 +10,6 @@ release must match the version used to generate the reported results.
 The source code is available at [Cookie-owo/Siamese](https://github.com/Cookie-owo/Siamese),
 with the manuscript version identified by the [`v1.0.0`](https://github.com/Cookie-owo/Siamese/releases/tag/v1.0.0)
 tag. The associated model checkpoint is archived at
-[10.5281/zenodo.22793607](https://doi.org/10.5281/zenodo.22793607).
+[10.5281/zenodo.22793684](https://doi.org/10.5281/zenodo.22793684).
 The Zenodo DOI for the frozen source-code archive will be added if a separate
 software archive is created.
